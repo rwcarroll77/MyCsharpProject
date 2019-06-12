@@ -1,0 +1,103 @@
+﻿@model WebPresentation.Models.ApplicationUser
+
+@{
+    ViewBag.Title = "Details";
+}
+
+<h2>Details</h2>
+
+<div>
+    <h4>ApplicationUser</h4>
+    <hr />
+    <dl class="dl-horizontal">
+        <dt>
+            @Html.DisplayNameFor(model => model.Email)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Email)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.PhoneNumber)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.PhoneNumber)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.UserName)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.UserName)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.screenName)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.screenName)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.firstName)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.firstName)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.lastName)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.lastName)
+        </dd>
+
+
+        <dt>
+            Assigned Roles:
+        </dt>
+
+        <dd>
+            <ul>
+                @foreach (string r in ViewBag.Roles)
+                {
+                    <li>
+                        <strong>
+                            @r @Html.ActionLink("Remove Role", "RemoveRole",
+                 new { Id = Model.Id, Role = r })
+                        </strong>
+                    </li>
+                }
+            </ul>
+        </dd>
+
+        <dt>
+            Unassigned Roles:
+        </dt>
+
+        <dd>
+            <ul>
+                @foreach (string r in ViewBag.NoRoles)
+                {
+                    <li>
+                        <strong>
+                            @r @Html.ActionLink("Add Role", "AddRole",
+             new { Id = Model.Id, Role = r })
+                        </strong>
+                    </li>
+                }
+            </ul>
+        </dd>
+
+    </dl>
+</div>
+<p>
+    @Html.ActionLink("Edit", "Edit", new { id = Model.Id }) |
+    @Html.ActionLink("Back to List", "Index")
+</p>

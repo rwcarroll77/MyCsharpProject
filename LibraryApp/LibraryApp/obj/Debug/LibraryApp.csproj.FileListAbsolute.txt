@@ -1,0 +1,15 @@
+C:\Users\shado\OneDrive\FALL 2018\.Net 2\.Net 2 Project\LibraryApp\LibraryApp\bin\Debug\LibraryApp.exe.config
+C:\Users\shado\OneDrive\FALL 2018\.Net 2\.Net 2 Project\LibraryApp\LibraryApp\bin\Debug\LibraryApp.exe
+C:\Users\shado\OneDrive\FALL 2018\.Net 2\.Net 2 Project\LibraryApp\LibraryApp\bin\Debug\LibraryApp.pdb
+C:\Users\shado\OneDrive\FALL 2018\.Net 2\.Net 2 Project\LibraryApp\LibraryApp\obj\Debug\LibraryApp.csprojResolveAssemblyReference.cache
+C:\Users\shado\OneDrive\FALL 2018\.Net 2\.Net 2 Project\LibraryApp\LibraryApp\obj\Debug\MainWindow.g.cs
+C:\Users\shado\OneDrive\FALL 2018\.Net 2\.Net 2 Project\LibraryApp\LibraryApp\obj\Debug\App.g.cs
+C:\Users\shado\OneDrive\FALL 2018\.Net 2\.Net 2 Project\LibraryApp\LibraryApp\obj\Debug\LibraryApp_MarkupCompile.cache
+C:\Users\shado\OneDrive\FALL 2018\.Net 2\.Net 2 Project\LibraryApp\LibraryApp\obj\Debug\LibraryApp_MarkupCompile.lref
+C:\Users\shado\OneDrive\FALL 2018\.Net 2\.Net 2 Project\LibraryApp\LibraryApp\obj\Debug\MainWindow.baml
+C:\Users\shado\OneDrive\FALL 2018\.Net 2\.Net 2 Project\LibraryApp\LibraryApp\obj\Debug\LibraryApp.g.resources
+C:\Users\shado\OneDrive\FALL 2018\.Net 2\.Net 2 Project\LibraryApp\LibraryApp\obj\Debug\LibraryApp.Properties.Resources.resources
+C:\Users\shado\OneDrive\FALL 2018\.Net 2\.Net 2 Project\LibraryApp\LibraryApp\obj\Debug\LibraryApp.csproj.GenerateResource.Cache
+C:\Users\shado\OneDrive\FALL 2018\.Net 2\.Net 2 Project\LibraryApp\LibraryApp\obj\Debug\LibraryApp.csproj.CoreCompileInputs.cache
+C:\Users\shado\OneDrive\FALL 2018\.Net 2\.Net 2 Project\LibraryApp\LibraryApp\obj\Debug\LibraryApp.exe
+C:\Users\shado\OneDrive\FALL 2018\.Net 2\.Net 2 Project\LibraryApp\LibraryApp\obj\Debug\LibraryApp.pdb

@@ -1,0 +1,73 @@
+﻿<Window x:Class="LibraryApp.UserCreateWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:LibraryApp"
+        mc:Ignorable="d"
+        Title="UserCreateWindow" Height="400" Width="400">
+    <Grid Background="LightBlue">
+        <Grid.RowDefinitions>
+            <RowDefinition></RowDefinition>
+            <RowDefinition></RowDefinition>
+            <RowDefinition></RowDefinition>
+            <RowDefinition></RowDefinition>
+            <RowDefinition></RowDefinition>
+            <RowDefinition></RowDefinition>
+        </Grid.RowDefinitions>
+        <Grid Grid.Row="0">
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition></ColumnDefinition>
+                <ColumnDefinition></ColumnDefinition>
+                <ColumnDefinition></ColumnDefinition>
+            </Grid.ColumnDefinitions>
+            <Label Content="First Name" VerticalAlignment="Center" HorizontalAlignment="Center"></Label>
+            <TextBox Grid.Column="1" x:Name="txtFirstName" Width="240" Height="35" Grid.ColumnSpan="2"></TextBox>
+        </Grid>
+        <Grid Grid.Row="1">
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition></ColumnDefinition>
+                <ColumnDefinition></ColumnDefinition>
+                <ColumnDefinition></ColumnDefinition>
+            </Grid.ColumnDefinitions>
+            <Label Content="Last Name" VerticalAlignment="Center" HorizontalAlignment="Center"></Label>
+            <TextBox Grid.Column="1" x:Name="txtLastName" Width="240" Height="35" Grid.ColumnSpan="2"></TextBox>
+        </Grid>
+        <Grid Grid.Row="2">
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition></ColumnDefinition>
+                <ColumnDefinition></ColumnDefinition>
+                <ColumnDefinition></ColumnDefinition>
+            </Grid.ColumnDefinitions>
+            <Label Content="Phone Number" VerticalAlignment="Center" HorizontalAlignment="Center"></Label>
+            <TextBox Grid.Column="1" x:Name="txtPhone" Width="240" Height="35" Grid.ColumnSpan="2"></TextBox>
+        </Grid>
+        <Grid Grid.Row="3">
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition></ColumnDefinition>
+                <ColumnDefinition></ColumnDefinition>
+                <ColumnDefinition></ColumnDefinition>
+            </Grid.ColumnDefinitions>
+            <Label Content="Email" VerticalAlignment="Center" HorizontalAlignment="Center"></Label>
+            <TextBox Grid.Column="1" x:Name="txtEmail" Width="240" Height="35" Grid.ColumnSpan="2"></TextBox>
+        </Grid>
+        <Grid Grid.Row="4">
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition></ColumnDefinition>
+                <ColumnDefinition></ColumnDefinition>
+                <ColumnDefinition></ColumnDefinition>
+            </Grid.ColumnDefinitions>
+            <Label Content="Role" x:Name="lblRole" VerticalAlignment="Center" HorizontalAlignment="Center"></Label>
+            <ComboBox Grid.Column="1" x:Name="cboRole" Width="240" Height="35" Grid.ColumnSpan="2"></ComboBox>
+        </Grid>
+        <Grid Grid.Row="5">
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition></ColumnDefinition>
+                <ColumnDefinition></ColumnDefinition>
+                <ColumnDefinition></ColumnDefinition>
+            </Grid.ColumnDefinitions>
+            <Button x:Name="btnCancel" Grid.Column="0" Content="Cancel" Width="100" Height="40" Click="btnCancel_Click" ></Button>
+            <Button x:Name="btnSave" Grid.Column="2" Content="Save" Width="100" Height="40" Click="btnSave_Click" ></Button>
+        </Grid>
+    </Grid>
+</Window>

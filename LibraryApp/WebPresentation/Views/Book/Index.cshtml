@@ -1,0 +1,87 @@
+﻿@model IEnumerable<DataObjects.VMBook>
+@{
+    ViewBag.Title = "Index";
+}
+
+<h2>Index</h2>
+
+<p>
+    @if (User.IsInRole("Basic"))
+    {
+        @Html.ActionLink("Create New", "Create")
+    }
+    @if (User.IsInRole("Guest"))
+    {
+        @Html.ActionLink("View Borrowed Books", "BorrowedIndex")
+    }
+    </p>
+<table class="table">
+    <tr>
+        <th>
+            @Html.DisplayNameFor(model => model.Title)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.AuthorID)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.AuthorName)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Publisher)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Genre)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Description)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Status)
+        </th>
+        <th></th>
+    </tr>
+
+    @foreach (var item in Model)
+    {
+        <tr>
+            <td>
+                @Html.DisplayFor(modelItem => item.Title)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.AuthorID)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.AuthorName)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Publisher)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Genre)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Description)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Status)
+            </td>
+            <td>
+
+                @if (User.IsInRole("Basic"))
+                {
+                    @Html.ActionLink("Edit", "Edit", new { id = item.BookID })
+                }
+                @Html.ActionLink("Details", "Details", new { id = item.BookID })
+                @if (User.IsInRole("Guest"))
+                {
+                    @Html.ActionLink("Borrow Book", "Checkout", new { id = item.BookID })
+                }
+                @if (User.IsInRole("Basic"))
+                {
+                    @Html.ActionLink("Delete", "Delete", new { id = item.BookID })
+                }
+            </td>
+        </tr>
+    }
+
+</table>
